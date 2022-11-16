@@ -1,26 +1,29 @@
 import PropTypes from 'prop-types';
+import { Component } from 'react'
 
-function ShopItemFunc({ item }) {
-    return (
-        <div className="main-content">
-            <h2>{item.brand}</h2>
-            <h1>{item.title}</h1>
-            <h3>{item.desctiption}</h3>
-            <div className="description">
-                {item.descriptionFull}
+class ShopItemClass extends Component {
+    render() {
+        return (
+            <div className="main-content">
+                <h2>{this.props.item.brand}</h2>
+                <h1>{this.props.item.title}</h1>
+                <h3>{this.props.item.desctiption}</h3>
+                <div className="description">
+                    {this.props.item.descriptionFull}
+                </div>
+                <div className="highlight-window mobile"><div className="highlight-overlay"></div></div>
+                <div className="divider"></div>
+                <div className="purchase-info">
+                    <div className="price">{`${this.props.item.currency}${this.props.item.price}.00`}</div>
+                    <button>Добавить в корзину</button>
+                </div>
             </div>
-            <div className="highlight-window mobile"><div className="highlight-overlay"></div></div>
-            <div className="divider"></div>
-            <div className="purchase-info">
-                <div className="price">{`${item.currency}${item.price}.00`}</div>
-                <button>Добавить в корзину</button>
-            </div>
-        </div>
-    )
-}
+        )
+    }
+  }
 
-ShopItemFunc.propTypes = {
+ShopItemClass.propTypes = {
     item: PropTypes.object
 }
 
-export default ShopItemFunc
+export default ShopItemClass

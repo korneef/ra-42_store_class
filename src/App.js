@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { item } from './item';
-import ShopItemFunc from './ShopItemFunc';
+import ShopItemClass from './ShopItemClass';
 
 function App() {
   return (

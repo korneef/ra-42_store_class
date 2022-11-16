@@ -1,5 +1,5 @@
 export const item = {
-    brand: 'Tiger of Sweden',
+    brand: 'Tiger of Sqwezwxweden',
     title: 'Leonard coat',
     description: 'Minimalistic coat in cotton-blend',
     descriptionFull: 'Men\'s minimalistic overcoat in cotton-blend. Features a stand-up collar, concealed front closure and single back vent. Slim fit with clean, straight shape. Above-knee length.',
